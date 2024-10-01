@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <body>
+    <h1>TIME-ER</h1> 
+      <link rel="stylesheet" href="style.css" > <!-- add defer -->
+<div class="top-content">
+      <p id=now-time></p>
+</div >
+
+  <div class="actionable-content">
+      <p > Stopwatch</p>
+
+    <button id='start' onclick="startButton()">Start</button>
+    <button id='stop' onclick='stopButton()'>Stop</button> 
+    <button id='restart' onclick='restartButton()'>Restart</button>
+      <p id=stop-time>00:00:00 </p>
+    <ol id='time-ul'>
+    </ol>
+    <p >
+      Total time: </p><p id='total-time'></p>
+
+    <h2>Timer</h2>
+
+      <input id='input-timer' maxlength=3 minlength=1 type='text' min= 1 value="25"></input>
+    <button onclick='InputButton()' id="inpButton" autofocus>Time</button>
+    <p id='timer'>
+<script src="script.js"></script>
+<script src="journalscript.js"></script>
+    </p>
+
+    <p id='g'></p>
+   
+    <p id='timeOver'></p>
+
+<div>Are you a deciduous or conifer tree ?</div><!-- make a survival game with trees(creating your own forest) "Secretele padurii"-->
+   
+    <input type="radio" name="tree-type"> <label>conifer</label>
+    <input type="radio" name="tree-type"> <label>deciduous</label>
+  
+</div>
+
+
+  <div id="progress-circle" data-progress="0" style="--progress: 0deg"> <button id="timer-stopping" onclick='stopTimer()'>   </button> </div>
+
+
+  <!-- <Button> GET SITE </Button>-->
+  <!--    https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server   -->
+
+
+<h3>Routine</h3>
+<ul>
+<p>Workout A</p>
+
+<form onsubmit="download(this['name'].value, this['text1'].value,this['text2'].value,
+this['text3'].value,this['text4'].value,
+this['text5'].value,this['text6'].value,
+this['text6'].value,this['text7'].value,
+this['text8'].value,this['text9'].value,
+this['text10'].value)">
+
+  <input id= "dayoftheworkout" type="text" name="name" >
+
+  <script type="text/javascript"> 
+  let old;
+  old=new Date(); 
+   document.getElementById("dayoftheworkout").setAttribute('value',"Workout "+(old.getDate()).toString().padStart(2,"0") +'_'+(old.getMonth()+1).toString().padStart(2,"0")+'_'+old.getFullYear()+" .csv");
+  </script>
+
+<div class="box1">    <!--  changed li to span-->
+<span ><a href="https://www.youtube.com/watch?v=axoeDmW0oAY" target="_blank" ><p id="barbell1">Barbell Rows</p></a><input type="" name="text1"></span>
+<span ><a href="https://www.youtube.com/watch?v=vcBig73ojpE" target="_blank"><p id="barbell2">Bench Press</p></a><input type="" name="text2"> </span>
+
+<span ><a href="https://www.youtube.com/watch?v=bEv6CCg2BC8" target="_blank"><p id="barbell3">Squats</p></a><input type="" name="text3"></span>
+
+<span ><a href="        " target="_blank"><p id="barbell7">Workout</p></a><input type="" name="text7"></span>
+<span ><a href="        " target="_blank"><p id="barbell8">Workout</p></a><input type="" name="text8"></span>
+<!--  here you add exercises
+
+<span ><a href="https://www.youtube.com/watch?v=bEv6CCg2BC8" target="_blank"><p id="nextexercise2">Squats</p></a><input type="" name="text3"></span>
+-->
+
+<p>Workout B</p>
+<span ><a href="https://www.youtube.com/watch?v=mjNHoibfrMo" target="_blank"><p id="barbell4">Chinups</p></a><input type="" name="text4"></span>
+  <span ><a href="https://www.youtube.com/watch?v=_RlRDWO2jfg" target="_blank"><p id="barbell5">Overhead Press</p></a><input type="" name="text5"></span>
+    <span ><a href="https://www.youtube.com/watch?v=VL5Ab0T07e4" target="_blank"><p id="barbell6">Deadlifts</p></a> <input type=""  name="text6"> </span>
+
+   <span ><a href="        " target="_blank"><p id="barbell9">Workout</p></a><input type="" name="text9"></span>
+    <span ><a href="        " target="_blank"><p id="barbell10">Workout</p></a><input type="" name="text10"></span> 
+
+
+
+</div>
+
+<div>
+  <label>
+    <p>Cardio</p>
+    <input type="checkbox" id="checkboxs">
+  </label>
+</div>
+
+
+<div>
+<input type="submit" value="Download">
+</div>
+
+<a id="nextbutton" href='journal.html' > Next Page </a>
+</form>
+
+</ul>
+</body>
+</html>
