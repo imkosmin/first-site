@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <body>
+  <body onload="orardate()">
     <h1>TIME-ER</h1> 
       <link rel="stylesheet" href="style.css" > <!-- add defer -->
 <div class="top-content">
@@ -45,6 +45,45 @@
   <!-- <Button> GET SITE </Button>-->
   <!--    https://stackoverflow.com/questions/3665115/how-to-create-a-file-in-memory-for-user-to-download-but-not-through-server   -->
 
+  <div id=faculta name="program faculta">
+    <h3>Program faculta </h3>
+    <p id="luni"> LUNI
+    <span class="lab">Programare orientata pe obiect(L) </span>
+    <span class="lab" id="hasurat">*<br> Teoria sistemelor(L)</span>
+    <span class="curs" id="hasurat"> Dispozitive electronice si electronica analogica(C) <br>*  <span class="seminar">Educatie Fizica II (S)</span>   </span>
+
+    </p>
+      <p id="marti">  MARTI
+      <span class="curs">Programare orientata pe obiect(C) </span>
+      <span class="curs">Sisteme de operare(C) </span>
+      <span class="curs">Prelucrarea imaginilor(C)</span>
+      <span class="proiect" id="hasurat" >Electronica digitala(P) <br>*   <span class="seminar">Limba Engleza (S)</span>    </span>
+
+
+
+      <p id="miercuri"> MIERCURI
+        <span class="curs">Electornica digitala(C) </span>
+        <span class="curs">Sisteme de operare(C)</span>
+        <span class="lab" id="hasurat">Dispozitive electronice si electronica analogica(L) <br>*</span>
+        <span class="lab"> </span>
+        <span class="lab" id="hasurat"> Electornica digitala(L) <br>*</span> 
+        </p>
+        <p id="joi"> JOI
+          <span class="curs">Programare orientata pe obiect(C) </span>
+          <span class="curs">Teoria sistemelor(C) </span>
+          <span class="lab">Programare orientata pe obiect(L) </span>
+          <span class="lab" id="hasurat">*<br>Calculatoare numerice 1 (L)</span>
+        </p>
+          <p id="vineri"> VINERI
+            <span class="lab"> </span>  <!-- TRB FACUT SI SPLIT-urile adica orele pe saptamani para/impara-->
+            <span class="curs">Calculatoare numerice 1 (C) </span>
+            <span class="lab" id="hasurat">*<br>Prelucrarea imaginilor (L) </span>
+          <!--FA sa arate care saptamana esti-->
+          <!-- FA sa se vada orarul in dreapta sus-->
+          </p>
+
+
+  </div>
 
 <h3>Routine</h3>
 <ul>
@@ -101,10 +140,12 @@ this['text10'].value)">
 <div>
 <input type="submit" value="Download">
 </div>
-
-<a id="nextbutton" href='journal.html' > Next Page </a>
+          <div>
+              <a id="nextbutton" href='journal.html' > Next Page </a>
+          </div>
 </form>
 
 </ul>
 </body>
 </html>
+
