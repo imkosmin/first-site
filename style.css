@@ -98,5 +98,35 @@ span
   display:inline-block ; /*modifica asta pt a face "Workout A" si "Workout B" distantate*/
 }
 
+#faculta
+{
+   /*position:absolute;
+
+ padding-left: 100vh;*/
+
+}
+#faculta span
+{
+ padding: 2vh;
+ border:2px solid black;
+font-size: 1em;
+
+}
+
+#hasurat 
+  {
+  background: 
+     linear-gradient(to top,
+         rgba(0,0,0,0) 0%,
+         rgba(0,0,0,0) calc(50% - 0.8px),
+         rgba(0,0,0,1) 50%,
+         rgba(0,0,0,0) calc(50% + 0.8px),
+         rgba(0,0,0,0) 50%);
+  }
 
 
+ 
+  .new-style::first-line {
+    color: red;
+    font-weight: normal;
+  }
