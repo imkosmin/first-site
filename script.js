@@ -231,6 +231,49 @@ function play() {
   audio.play();
 }
 
+function orardate()
+{
+  var ziua;
+  console.log(currentDate.getDay())
+  switch(currentDate.getDay())
+  {
+
+    case 0://
+      ziua=document.getElementById("luni")
+      ziua.classList.add('new-style');
+      
+   case 1:
+    ziua=document.getElementById("luni")
+    ziua.classList.add('new-style');
+   break;
+   case 2:
+    console.log("gfgds");
+    ziua=document.getElementById("marti")
+    ziua.classList.add('new-style');
+   break;
+   case 3:
+    ziua=document.getElementById("miercuri")
+    ziua.classList.add('new-style');
+   break;
+   case 4:
+    ziua=document.getElementById("joi")
+    ziua.classList.add('new-style');
+   break;
+   case 5:
+    ziua=document.getElementById("vineri")
+    ziua.classList.add('new-style');
+   break;
 
 
+
+   case 6:
+    ziua=document.querySelector("#vineri")
+
+    ziua.classList.add('new-style');
+    //la fiecare de asta voi face alt switch care o sa aibe 4-5 ore care o sa se coloreze depinzand de ce ore sunt pe moment
+   break;
+  }
+
+
+}
 
